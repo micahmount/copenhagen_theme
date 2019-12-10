@@ -431,7 +431,7 @@ ul {
   position: relative;
   align-items: center;
   display: flex;
-  height: 71px;
+  height: 150px;
   justify-content: space-between;
 }
 
@@ -443,7 +443,7 @@ ul {
 }
 
 .logo img {
-  max-height: 37px;
+  max-height: 100px;
 }
 
 .user-nav {
@@ -464,7 +464,7 @@ ul {
   border: solid 1px #ddd;
   right: 0;
   left: 0;
-  top: 71px;
+  top: 150px;
   z-index: 1;
 }
 
