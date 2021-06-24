@@ -24,8 +24,6 @@
     color: $brand_color;
     display: flex;
     flex: 1 0 340px;
-    flex-direction: column;
-    justify-content: center;
     margin: 0 0 30px;
     max-width: 100%;
     text-align: center;
@@ -45,9 +43,9 @@
       background-color: transparent;
       border: 1px solid $border-color;
 
-      .icon-lock::before {
-        content: "\1F512";
-        font-size: 15px;
+      .icon-lock {
+        height: 15px;
+        width: 15px;
         bottom: 5px;
         position: relative;
       }
@@ -59,20 +57,29 @@
   &-item-link {
     color: $brand_color;
     padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    border-radius: inherit;
 
     &:hover,
-    &:focus,
     &:active {
+      text-decoration: none;
+    }
+    
+    &:focus {
+      @include focus-ring;
       text-decoration: none;
     }
   }
 
   &-item-title {
     margin-bottom: 0;
+    font-size: 16px;
   }
 
   &-item-description {
-    font-weight: $font-weight-light;
     margin: 0;
   }
 
