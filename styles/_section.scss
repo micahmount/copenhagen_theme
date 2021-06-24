@@ -12,19 +12,16 @@
     flex: 1;
   }
 
-  &-subscribe {
-    .dropdown-toggle::after {
-      display: none;
+  &-subscribe button {
+    @extend .button;
+    &[data-selected="true"] {
+      @extend .button-primary;
     }
   }
 }
 
 .section-list {
   margin: 40px 0;
-}
-
-.section-list--collapsed .section-list-item:nth-child(1n + 6) {
-  display: none;
 }
 
 .section-list-item {

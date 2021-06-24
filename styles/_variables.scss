@@ -1,13 +1,12 @@
 // Variables
 
 // Colors
-$brand_color: #0072ef !default;
+$brand_color: #17494d !default;
 $brand_text_color: #fff !default; //Color for text with an accent color background
 $text_color: #333 !default;
-$link_color: #0072ef !default;
+$link_color: #17494d !default;
 $background_color: #fff !default;
 
-$visited-link-color: zass-darken($link_color, 20%);
 $hover-button-color: zass-darken($brand_color, 20%);
 $secondary-text-color: zass-lighten($text_color, 20%);
 
@@ -25,7 +24,7 @@ $border-color: #ddd;
 $button-color: $brand_color;
 
 $input-font-size: 14px;
-$field-text-color: #999;
+$field-text-color: #666;
 $field-text-focus-color: #555;
 
 // Breakpoints variables
@@ -36,6 +35,4 @@ $max-width-container: 1160px;
 // Fonts
 $heading_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
 $text_font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif !default;
-$font-weight-base: 400;
-$font-weight-light: 300;
 $font-weight-semibold: 600;

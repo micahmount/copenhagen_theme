@@ -12,6 +12,21 @@ $header-height: 150px;
 
 .logo img {
   max-height: 100px;
+  max-height: 37px;
+  vertical-align: middle;
+}
+
+.logo span {
+  margin: 0 10px;
+  color: $brand_color;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo a:hover, .logo a:focus, .logo a:active {
+  text-decoration: none;
 }
 
 .user-nav {
@@ -63,22 +78,30 @@ $header-height: 150px;
       text-decoration: underline;
     }
 
-    &.login {
-      display: inline-block;
+    &.sign-in { display: inline-block; }
+  }
+
+  .hide-on-mobile {
+    @include mobile {
+      @include visually-hidden;
     }
   }
 
-  .icon-menu {
-    @include tablet {
-      display: none;
-    }
+  .menu-button {
+    @include tablet { display: none; }
+    background: none;
     border: 0;
     color: $link_color;
-    cursor: pointer;
     display: inline-block;
     margin-right: 10px;
     padding: 0;
     width: auto;
+
+    .icon-menu {
+      vertical-align: middle;
+      width: 13px;
+      height: 13px;
+    }
 
     [dir="rtl"] & {
       margin-left: 10px;
@@ -91,5 +114,43 @@ $header-height: 150px;
       background-color: transparent;
       color: $link_color;
     }
+  }
+}
+
+.skip-navigation {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  left: -999px;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  z-index: -999;
+
+
+  [dir="rtl"] & {
+    left: initial;
+    right: -999px;
+  }
+
+  &:focus,
+  &:active {
+    left: auto;
+    overflow: auto;
+    text-align: center;
+    text-decoration: none;
+    top: auto;
+    z-index: 999;
+
+
+  [dir="rtl"] & {
+    left: initial;
+    right: auto;
+  }
   }
 }
