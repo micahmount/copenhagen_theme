@@ -1,7 +1,7 @@
 {
-  "name": "Unicef Kid Power",
+  "name": "Kid Power",
   "author": "Micah Mount",
-  "version": "2.10.0",
+  "version": "2.10.1",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
