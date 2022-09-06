@@ -1,7 +1,7 @@
 {
   "name": "Kid Power",
   "author": "Micah Mount",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -13,7 +13,7 @@
           "type": "color",
           "description": "brand_color_description",
           "label": "brand_color_label",
-          "value": "#0072EF"
+          "value": "#57C8EF"
         },
         {
           "identifier": "brand_text_color",
